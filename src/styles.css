@@ -29,8 +29,9 @@ body {
       height: 50%;
     }
 
-    #main-nav {
+    .nav-main {
       border: 1px solid black;
+      display: none;
 
       ul {
         list-style: none;
@@ -40,6 +41,10 @@ body {
         padding: 0.3rem;
         gap: 0.3rem;
       }
+    }
+
+    .toggle-display {
+      display: block;
     }
   }
 }

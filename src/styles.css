@@ -47,4 +47,37 @@ body {
       display: block;
     }
   }
+
+  main {
+    background-color: gray;
+    height: 80%;
+    width: 100%;
+    padding: 1rem;
+
+    #image-carousel-container {
+      height: 100%;
+      width: 100%;
+      background-color: rgb(37, 37, 37);
+      padding: 1rem;
+      display: flex;
+
+      .arrow {
+        width: 20%;
+        height: 100%;
+      }
+
+      #left-arrow-button {
+        background-color: lightcoral;
+      }
+
+      #images-and-circles-container {
+        width: 60%;
+        background-color: lightblue;
+      }
+
+      #right-arrow-button {
+        background-color: lightgreen;
+      }
+    }
+  }
 }

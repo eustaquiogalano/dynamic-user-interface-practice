@@ -31,6 +31,7 @@ body {
 
     .nav-main {
       border: 1px solid black;
+      background-color: white;
       display: none;
 
       ul {

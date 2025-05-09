@@ -62,7 +62,7 @@ body {
       display: flex;
 
       .arrow {
-        width: 20%;
+        width: 10%;
         height: 100%;
       }
 
@@ -71,7 +71,7 @@ body {
       }
 
       #images-and-circles-container {
-        width: 60%;
+        width: 90%;
         background-color: lightblue;
       }
 

@@ -1,5 +1,11 @@
 import './styles.css';
-import { attachNavButtonClickEvent } from './modules/events';
+import {
+  attachCircleButtonClickEvent,
+  attachNavButtonClickEvent,
+} from './modules/events';
 
-// Initialize the click event for menu button
+// Initializes the click event for menu button
 attachNavButtonClickEvent();
+
+// Initializes the click event for circle button
+attachCircleButtonClickEvent();

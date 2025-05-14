@@ -4,7 +4,7 @@ import {
   changeToImage3,
   changeToImage4,
   changeToImage5,
-} from './image_changer';
+} from './image-navigator';
 
 export function attachNavButtonClickEvent() {
   // Get a reference of menu button

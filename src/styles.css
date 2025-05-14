@@ -85,16 +85,16 @@ body {
 
       #images-and-circles-container {
         width: 80%;
-        background-color: lightblue;
+        /* background-color: lightblue; */
 
         #images-container {
           height: 90%;
           width: 100%;
-          background-color: red;
+          /* background-color: red; */
           padding: 1rem;
 
           #image-main {
-            background-color: yellow;
+            /* background-color: yellow; */
             height: 100%;
             width: 100%;
             padding: 1rem;
@@ -109,7 +109,7 @@ body {
 
         #circles-container {
           height: 10%;
-          background-color: green;
+          /* background-color: green; */
           display: flex;
           justify-content: center;
           align-items: center;

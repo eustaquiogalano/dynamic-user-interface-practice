@@ -1,4 +1,4 @@
-import { circleButtonNavigator } from './image-navigator';
+import { arrowButtonNavigator, circleButtonNavigator } from './image-navigator';
 
 export function attachNavButtonClickEvent() {
   // Get a reference of menu button
@@ -26,4 +26,14 @@ export function attachCircleButtonClickEvent() {
   document
     .querySelector('#circle-5')
     .addEventListener('click', circleButtonNavigator.changeToImage5);
+}
+
+export function attachArrowButtonClickEvent() {
+  document
+    .querySelector('#left-arrow')
+    .addEventListener('click', arrowButtonNavigator.moveImageToLeft);
+
+  document
+    .querySelector('#right-arrow')
+    .addEventListener('click', arrowButtonNavigator.moveImageToRight);
 }

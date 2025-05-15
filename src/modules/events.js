@@ -1,10 +1,4 @@
-import {
-  changeToImage1,
-  changeToImage2,
-  changeToImage3,
-  changeToImage4,
-  changeToImage5,
-} from './image-navigator';
+import { circleButtonNavigator } from './image-navigator';
 
 export function attachNavButtonClickEvent() {
   // Get a reference of menu button
@@ -17,9 +11,19 @@ export function attachNavButtonClickEvent() {
 }
 
 export function attachCircleButtonClickEvent() {
-  document.querySelector('#circle-1').addEventListener('click', changeToImage1);
-  document.querySelector('#circle-2').addEventListener('click', changeToImage2);
-  document.querySelector('#circle-3').addEventListener('click', changeToImage3);
-  document.querySelector('#circle-4').addEventListener('click', changeToImage4);
-  document.querySelector('#circle-5').addEventListener('click', changeToImage5);
+  document
+    .querySelector('#circle-1')
+    .addEventListener('click', circleButtonNavigator.changeToImage1);
+  document
+    .querySelector('#circle-2')
+    .addEventListener('click', circleButtonNavigator.changeToImage2);
+  document
+    .querySelector('#circle-3')
+    .addEventListener('click', circleButtonNavigator.changeToImage3);
+  document
+    .querySelector('#circle-4')
+    .addEventListener('click', circleButtonNavigator.changeToImage4);
+  document
+    .querySelector('#circle-5')
+    .addEventListener('click', circleButtonNavigator.changeToImage5);
 }

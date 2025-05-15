@@ -29,4 +29,51 @@ const circleButtonNavigator = {
   },
 };
 
-export { circleButtonNavigator };
+const arrowButtonNavigator = {
+  moveImageToLeft() {
+    imageNumberTracker =
+      imageNumberTracker === 1 ? 1 : (imageNumberTracker -= 1);
+
+    switch (imageNumberTracker) {
+      case 1:
+        circleButtonNavigator.changeToImage1();
+        break;
+      case 2:
+        circleButtonNavigator.changeToImage2();
+        break;
+      case 3:
+        circleButtonNavigator.changeToImage3();
+        break;
+      case 4:
+        circleButtonNavigator.changeToImage4();
+        break;
+      case 5:
+        circleButtonNavigator.changeToImage5();
+        break;
+    }
+  },
+  moveImageToRight() {
+    imageNumberTracker =
+      imageNumberTracker === 5 ? 5 : (imageNumberTracker += 1);
+
+    switch (imageNumberTracker) {
+      case 1:
+        circleButtonNavigator.changeToImage1();
+        break;
+      case 2:
+        circleButtonNavigator.changeToImage2();
+        break;
+      case 3:
+        circleButtonNavigator.changeToImage3();
+        break;
+      case 4:
+        circleButtonNavigator.changeToImage4();
+        break;
+      case 5:
+        circleButtonNavigator.changeToImage5();
+        break;
+    }
+  },
+};
+
+export { circleButtonNavigator, arrowButtonNavigator };

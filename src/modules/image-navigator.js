@@ -76,4 +76,46 @@ const arrowButtonNavigator = {
   },
 };
 
-export { circleButtonNavigator, arrowButtonNavigator };
+const automaticNavigator = {
+  // Currently this object only has 1 method inside it
+  // but adding additional one in the future is not a problem
+
+  // This method is responsible for slideshow effect
+  automaticImageSwapping() {
+    // Direction variable will tell if the
+    // count is ascending or descending
+    // 1 is ascending, -1 is descending
+    let direction = 1;
+
+    // This function will run every 5 seconds
+    setInterval(() => {
+      // Evaluate the tracker
+      if (imageNumberTracker === 5) {
+        // If tracker reaches 5
+        // set the counting to descending order
+        direction = -1;
+      } else if (imageNumberTracker === 1 && direction === -1) {
+        // If tracker reaches back to 1
+        // set the counting back to ascending order
+        direction = 1;
+      }
+
+      // Evaluate the direction
+      if (direction === 1) {
+        // If direction is 1
+        // run this method
+        arrowButtonNavigator.moveImageToRight();
+      } else if (direction === -1) {
+        // If direction is -1
+        // run this one
+        arrowButtonNavigator.moveImageToLeft();
+      }
+
+      // Logging the current value for
+      // debugging purposes
+      console.log(imageNumberTracker);
+    }, 5000);
+  },
+};
+
+export { circleButtonNavigator, automaticNavigator, arrowButtonNavigator };

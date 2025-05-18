@@ -4,6 +4,7 @@ import {
   attachCircleButtonClickEvent,
   attachNavButtonClickEvent,
 } from './modules/events';
+import { automaticNavigator } from './modules/image-navigator';
 
 // Initializes the click event for menu button
 attachNavButtonClickEvent();
@@ -13,3 +14,6 @@ attachCircleButtonClickEvent();
 
 // Initialize the click event for arrow buttons
 attachArrowButtonClickEvent();
+
+// Initializes the slideshow effect
+automaticNavigator.automaticImageSwapping();
